@@ -15,7 +15,7 @@ Just clone, install dependencies, remove module `Users` and work.
 
 ## Contents
 
-- Admin Backend
+- Admin Backend (Module [T4web\Admin](https://github.com/t4web/Admin))
   - [Main menu](https://github.com/t4web/zf2-skeleton/blob/master/docs/main-menu.md)
   - Build simply CRUD Entity
 
