@@ -6,7 +6,8 @@ namespace Helper;
 
 class Acceptance extends \Codeception\Module
 {
-    public function sendRequest($method, $uri, array $params = []) {
+    public function sendRequest($method, $uri, array $params = [])
+    {
         $this->getModule('PhpBrowser')->_loadPage($method, $uri, $params);
     }
 }

@@ -4,7 +4,8 @@ namespace Users\User;
 
 use T4webDomain\Entity;
 
-class User extends Entity {
+class User extends Entity
+{
 
     /**
      * @var string

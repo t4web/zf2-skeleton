@@ -2,51 +2,51 @@
 
 namespace Users;
 
-return array(
-    'router' => array(
-        'routes' => array(
-            'users' => array(
+return [
+    'router' => [
+        'routes' => [
+            'users' => [
                 'type'    => 'Literal',
-                'options' => array(
+                'options' => [
                     'route'    => '/users',
-                ),
-                'child_routes' => array(
-                    'user' => array(
+                ],
+                'child_routes' => [
+                    'user' => [
                         'type'    => 'Literal',
-                        'options' => array(
+                        'options' => [
                             'route'    => '/user',
-                        ),
-                        'child_routes' => array(
-                            'create-page' => array(
+                        ],
+                        'child_routes' => [
+                            'create-page' => [
                                 'type'    => 'Literal',
-                                'options' => array(
+                                'options' => [
                                     'route'    => '/create-page',
-                                    'defaults' => array(
+                                    'defaults' => [
                                         'controller' => 'sebaks-zend-mvc-controller',
                                         'allowedMethods' => ['GET'],
                                         'template' => 'users/user/create.phtml',
-                                    ),
-                                ),
-                            ),
-                            'create' => array(
+                                    ],
+                                ],
+                            ],
+                            'create' => [
                                 'type'    => 'Literal',
-                                'options' => array(
+                                'options' => [
                                     'route'    => '/create',
-                                    'defaults' => array(
+                                    'defaults' => [
                                         'controller' => 'sebaks-zend-mvc-controller',
                                         'allowedMethods' => ['POST'],
                                         'changesValidator' => 'Users\User\CreateChangesValidator',
                                         'service' => 'Users\User\CreateService',
                                         'template' => 'users/user/create.phtml',
                                         'redirectTo' => 'users/user/success',
-                                    ),
-                                ),
-                            ),
-                            'read' => array(
+                                    ],
+                                ],
+                            ],
+                            'read' => [
                                 'type'    => 'Segment',
-                                'options' => array(
+                                'options' => [
                                     'route'    => '/read/:id',
-                                    'defaults' => array(
+                                    'defaults' => [
                                         'controller' => 'sebaks-zend-mvc-controller',
                                         'allowedMethods' => ['GET'],
                                         'criteriaValidator' => 'Users\User\ReadCriteriaValidator',
@@ -54,14 +54,14 @@ return array(
                                         'viewModel' => 'Users\User\ReadViewModel',
                                         'template' => 'users/user/read.phtml',
                                         'routeCriteria' => ['id'],
-                                    ),
-                                ),
-                            ),
-                            'update' => array(
+                                    ],
+                                ],
+                            ],
+                            'update' => [
                                 'type'    => 'Segment',
-                                'options' => array(
+                                'options' => [
                                     'route'    => '/update/:id',
-                                    'defaults' => array(
+                                    'defaults' => [
                                         'controller' => 'sebaks-zend-mvc-controller',
                                         'allowedMethods' => ['POST'],
                                         'criteriaValidator' => 'Users\User\UpdateCriteriaValidator',
@@ -69,166 +69,166 @@ return array(
                                         'service' => 'Users\User\UpdateService',
                                         'template' => 'users/user/update.phtml',
                                         'redirectTo' => 'users/user/success',
-                                    ),
-                                ),
-                            ),
-                            'delete' => array(
+                                    ],
+                                ],
+                            ],
+                            'delete' => [
                                 'type'    => 'Segment',
-                                'options' => array(
+                                'options' => [
                                     'route'    => '/delete/:id',
-                                    'defaults' => array(
+                                    'defaults' => [
                                         'controller' => 'sebaks-zend-mvc-controller',
                                         'allowedMethods' => ['GET'],
                                         'criteriaValidator' => 'Users\User\DeleteCriteriaValidator',
                                         'service' => 'Users\User\DeleteService',
                                         'redirectTo' => 'users/user/success',
-                                    ),
-                                ),
-                            ),
-                            'success' => array(
+                                    ],
+                                ],
+                            ],
+                            'success' => [
                                 'type'    => 'Literal',
-                                'options' => array(
+                                'options' => [
                                     'route'    => '/success',
-                                    'defaults' => array(
+                                    'defaults' => [
                                         'allowedMethods' => ['GET'],
                                         'controller' => 'sebaks-zend-mvc-controller',
                                         'template' => 'users/user/success.phtml',
-                                    ),
-                                ),
-                            ),
-                            'list' => array(
+                                    ],
+                                ],
+                            ],
+                            'list' => [
                                 'type'    => 'Segment',
-                                'options' => array(
+                                'options' => [
                                     'route'    => '/list',
-                                    'defaults' => array(
+                                    'defaults' => [
                                         'controller' => 'sebaks-zend-mvc-controller',
                                         'allowedMethods' => ['GET'],
                                         'criteriaValidator' => 'Users\User\ListCriteriaValidator',
                                         'service' => 'Users\User\ListService',
                                         'viewModel' => 'Users\User\ListViewModel',
                                         'template' => 'users/user/list.phtml',
-                                    ),
-                                ),
-                            ),
-                        ),
-                    ),
-                ),
-            ),
-            'api' => array(
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'api' => [
                 'type'    => 'Literal',
-                'options' => array(
+                'options' => [
                     'route'    => '/api',
-                ),
-                'child_routes' => array(
-                    'users' => array(
+                ],
+                'child_routes' => [
+                    'users' => [
                         'type'    => 'Literal',
-                        'options' => array(
+                        'options' => [
                             'route'    => '/users',
-                        ),
-                        'child_routes' => array(
-                            'user' => array(
+                        ],
+                        'child_routes' => [
+                            'user' => [
                                 'type'    => 'Literal',
-                                'options' => array(
+                                'options' => [
                                     'route'    => '/user',
-                                ),
-                                'child_routes' => array(
-                                    'create' => array(
+                                ],
+                                'child_routes' => [
+                                    'create' => [
                                         'type'    => 'Literal',
-                                        'options' => array(
+                                        'options' => [
                                             'route'    => '/create',
-                                            'defaults' => array(
+                                            'defaults' => [
                                                 'controller' => 'sebaks-zend-mvc-api-controller',
                                                 'allowedMethods' => ['POST'],
                                                 'changesValidator' => 'Users\User\CreateChangesValidator',
                                                 'service' => 'Users\User\CreateService',
-                                            ),
-                                        ),
-                                    ),
-                                    'read' => array(
+                                            ],
+                                        ],
+                                    ],
+                                    'read' => [
                                         'type'    => 'Segment',
-                                        'options' => array(
+                                        'options' => [
                                             'route'    => '/read/:id',
-                                            'defaults' => array(
+                                            'defaults' => [
                                                 'controller' => 'sebaks-zend-mvc-api-controller',
                                                 'allowedMethods' => ['GET'],
                                                 'criteriaValidator' => 'Users\User\ReadCriteriaValidator',
                                                 'service' => 'Users\User\ReadService',
-                                            ),
-                                        ),
-                                    ),
-                                    'update' => array(
+                                            ],
+                                        ],
+                                    ],
+                                    'update' => [
                                         'type'    => 'Segment',
-                                        'options' => array(
+                                        'options' => [
                                             'route'    => '/update/:id',
-                                            'defaults' => array(
+                                            'defaults' => [
                                                 'controller' => 'sebaks-zend-mvc-api-controller',
                                                 'allowedMethods' => ['POST'],
                                                 'criteriaValidator' => 'Users\User\UpdateCriteriaValidator',
                                                 'changesValidator' => 'Users\User\UpdateChangesValidator',
                                                 'service' => 'Users\User\UpdateService',
-                                            ),
-                                        ),
-                                    ),
-                                    'delete' => array(
+                                            ],
+                                        ],
+                                    ],
+                                    'delete' => [
                                         'type'    => 'Segment',
-                                        'options' => array(
+                                        'options' => [
                                             'route'    => '/delete/:id',
-                                            'defaults' => array(
+                                            'defaults' => [
                                                 'controller' => 'sebaks-zend-mvc-api-controller',
                                                 'allowedMethods' => ['POST'],
                                                 'criteriaValidator' => 'Users\User\DeleteCriteriaValidator',
                                                 'service' => 'Users\User\DeleteService',
-                                            ),
-                                        ),
-                                    ),
-                                ),
-                            ),
-                        ),
-                    ),
-                ),
-            ),
+                                            ],
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+            ],
 
-            'admin-users-user-create-new' => array(
+            'admin-users-user-create-new' => [
                 'type'    => 'Literal',
-                'options' => array(
+                'options' => [
                     'route'    => '/admin/users/user/new',
-                    'defaults' => array(
+                    'defaults' => [
                         'controller' => 'sebaks-zend-mvc-controller',
                         'allowedMethods' => ['GET'],
-                    ),
-                ),
-            ),
-            'admin-users-user-create' => array(
+                    ],
+                ],
+            ],
+            'admin-users-user-create' => [
                 'type'    => 'Literal',
-                'options' => array(
+                'options' => [
                     'route'    => '/admin/users/user/create',
-                    'defaults' => array(
+                    'defaults' => [
                         'controller' => 'sebaks-zend-mvc-controller',
                         'allowedMethods' => ['POST'],
                         'changesValidator' => 'Users\User\CreateChangesValidator',
                         'service' => 'Users\User\Service\Creator',
                         'redirectTo' => 'admin-users-user-list',
-                    ),
-                ),
-            ),
-            'admin-users-user-read' => array(
+                    ],
+                ],
+            ],
+            'admin-users-user-read' => [
                 'type'    => 'Segment',
-                'options' => array(
+                'options' => [
                     'route'    => '/admin/users/user/read/:id',
-                    'defaults' => array(
+                    'defaults' => [
                         'controller' => 'sebaks-zend-mvc-controller',
                         'allowedMethods' => ['GET'],
                         'criteriaValidator' => 'Users\User\ReadCriteriaValidator',
                         'service' => 'Users\User\ReadService',
                         'routeCriteria' => 'id',
-                    ),
-                ),
-            ),
-            'admin-users-user-update' => array(
+                    ],
+                ],
+            ],
+            'admin-users-user-update' => [
                 'type'    => 'Segment',
-                'options' => array(
+                'options' => [
                     'route'    => '/admin/users/user/update/:id',
-                    'defaults' => array(
+                    'defaults' => [
                         'controller' => 'sebaks-zend-mvc-controller',
                         'allowedMethods' => ['POST'],
                         'criteriaValidator' => 'Users\User\ReadCriteriaValidator',
@@ -236,49 +236,49 @@ return array(
                         'service' => 'Users\User\Service\Updater',
                         'routeCriteria' => ['id'],
                         'redirectTo' => 'admin-users-user-list',
-                    ),
-                ),
-            ),
-            'admin-users-user-delete' => array(
+                    ],
+                ],
+            ],
+            'admin-users-user-delete' => [
                 'type'    => 'Segment',
-                'options' => array(
+                'options' => [
                     'route'    => '/admin/users/user/delete/:id',
-                    'defaults' => array(
+                    'defaults' => [
                         'controller' => 'sebaks-zend-mvc-controller',
                         'allowedMethods' => ['GET'],
                         'criteriaValidator' => 'Users\User\ReadCriteriaValidator',
                         'service' => 'Users\User\Service\Deleter',
                         'redirectTo' => 'admin-users-user-list',
                         'routeCriteria' => ['id'],
-                    ),
-                ),
-            ),
-            'admin-users-user-delete-confirm' => array(
+                    ],
+                ],
+            ],
+            'admin-users-user-delete-confirm' => [
                 'type'    => 'Segment',
-                'options' => array(
+                'options' => [
                     'route'    => '/admin/users/user/delete/:id/confirm',
-                    'defaults' => array(
+                    'defaults' => [
                         'controller' => 'sebaks-zend-mvc-controller',
                         'allowedMethods' => ['GET'],
                         'criteriaValidator' => 'Users\User\ReadCriteriaValidator',
                         'routeCriteria' => ['id'],
-                    ),
-                ),
-            ),
-            'admin-users-user-list' => array(
+                    ],
+                ],
+            ],
+            'admin-users-user-list' => [
                 'type'    => 'Segment',
-                'options' => array(
+                'options' => [
                     'route'    => '/admin/users/user/list',
-                    'defaults' => array(
+                    'defaults' => [
                         'controller' => 'sebaks-zend-mvc-controller',
                         'allowedMethods' => ['GET'],
                         'criteriaValidator' => 'Users\User\ListCriteriaValidator',
                         'service' => 'Users\User\ListService',
-                    ),
-                ),
-            ),
-        ),
-    ),
+                    ],
+                ],
+            ],
+        ],
+    ],
     'sebaks-view' => [
         'layouts' => [
         ],
@@ -534,31 +534,31 @@ return array(
         ],
     ],
 
-    'service_manager' => array(
-        'abstract_factories' => array(
-        ),
-        'factories' => array(
+    'service_manager' => [
+        'abstract_factories' => [
+        ],
+        'factories' => [
             'Users\User\ReadService' => 'Users\User\ReadServiceFactory',
             'Users\User\EntityExistValidator' => 'Users\User\EntityExistValidatorFactory',
             'Users\User\ReadCriteriaValidator' => 'Users\User\ReadCriteriaValidatorFactory',
             'Users\User\ListService' => 'Users\User\ListServiceFactory',
             'Users\User\ListViewModel' => 'Users\User\ListViewModelFactory',
-        ),
-        'invokables' => array(
+        ],
+        'invokables' => [
             'Users\User\CreateChangesValidator' => 'Users\User\CreateChangesValidator',
             'Users\User\ReadViewModel' => 'Users\User\ReadViewModel',
             'Users\User\UpdateCriteriaValidator' => 'Users\User\UpdateCriteriaValidator',
             'Users\User\UpdateChangesValidator' => 'Users\User\UpdateChangesValidator',
             'Users\User\DeleteCriteriaValidator' => 'Users\User\DeleteCriteriaValidator',
             'Users\User\ListCriteriaValidator' => 'Users\User\ListCriteriaValidator',
-        ),
-    ),
+        ],
+    ],
 
-    'view_manager' => array(
-        'template_path_stack' => array(
+    'view_manager' => [
+        'template_path_stack' => [
             __DIR__ . '/../view',
-        ),
-    ),
+        ],
+    ],
 
     'entity_map' => [
         'User' => [
@@ -577,4 +577,4 @@ return array(
             ]
         ],
     ],
-);
+];

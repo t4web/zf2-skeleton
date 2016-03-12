@@ -6,13 +6,13 @@ class Module
 {
     public function getAutoloaderConfig()
     {
-        return array(
-            'Zend\Loader\StandardAutoloader' => array(
-                'namespaces' => array(
+        return [
+            'Zend\Loader\StandardAutoloader' => [
+                'namespaces' => [
                     'Users' => __DIR__ . '/src',
-                ),
-            ),
-        );
+                ],
+            ],
+        ];
     }
 
     public function getConfig()

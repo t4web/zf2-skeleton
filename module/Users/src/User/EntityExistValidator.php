@@ -14,9 +14,9 @@ class EntityExistValidator extends AbstractValidator
      */
     private $repository;
 
-    protected $messageTemplates = array(
+    protected $messageTemplates = [
         self::ENTITY_NOT_EXIST => "Entity with id '%value%' does not exists"
-    );
+    ];
 
     /**
      * @param RepositoryInterface $repository

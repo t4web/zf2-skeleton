@@ -13,7 +13,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && $_SERVER['HTTP_X_REQUESTED_WITH'
     $dbname = 'skeleton_test';
 }
 
-return array(
+return [
     'db' => [
         'driver' => 'Pdo',
         'dsn' => "mysql:dbname=$dbname;host=localhost",
@@ -37,4 +37,4 @@ return array(
             'ViewJsonStrategy',
         ],
     ],
-);
+];
