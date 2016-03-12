@@ -1,4 +1,5 @@
 .idea
+tests/_support/_generated
 vendor
 public/theme/admin
 composer.lock

@@ -18,4 +18,4 @@ modules:
             dsn: 'mysql:dbname=skeleton_test;host=localhost'
             user: 'skeleton'
             password: '111'
-            dump: tests/_data/skeleton_test.sql
+            dump: tests/_data/skeleton_test.mysql.sql
