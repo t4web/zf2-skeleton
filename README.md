@@ -5,8 +5,8 @@ application based on ZF2 MVC.
 
 Just clone, install dependencies, remove module `Users` and work.
 
-In Box - module `Users` - for demonstration features other modules.
-In Box - [Codeception](https://github.com/Codeception/Codeception) acceptance tests.
+- In Box - module `Users` - for demonstration features other modules.
+- In Box - [Codeception](https://github.com/Codeception/Codeception) acceptance tests.
 
 ## Difference from [ZF2 skeleton](https://github.com/zendframework/ZendSkeletonApplication)
 
