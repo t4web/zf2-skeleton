@@ -1,0 +1,43 @@
+<?php
+/** @var Zend\View\Model\ViewModel $viewModel */
+$viewModel = $this->viewModel()->getCurrent();
+/** @var  $result */
+$list = $viewModel->getVariable('result');
+$criteria = $viewModel->getVariable('criteria');
+
+$paginator = $viewModel->getVariable('paginator');
+$paginator->setVariable('criteria', $criteria);
+?>
+<h1>List of users</h1>
+<form>
+    <div class="form-group">
+        <label class="control-label" for="name">Name:</label>
+        <input class="form-control" id="name" type="text" name="name_equalTo" value="<?= (isset($criteria['name_equalTo'])) ? $criteria['name_equalTo'] : null; ?>" />
+    </div>
+    <button type="submit" class="btn btn-default">Filter</button>
+    <a class="btn btn-default" href="<?= $this->url('users/user/list') ?>" role="button">Clear</a>
+    <a class="btn btn-default" href="<?= $this->url('users/user/create-page') ?>" role="button">Create</a>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th style="width: 5%">#</th>
+            <th style="width: 80%">Name</th>
+            <th style="width: 15%">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($list as $entry): ?>
+            <tr>
+                <td><?= $entry['id'] ?></td>
+                <td><?= $entry['name'] ?></td>
+                <td>
+                    <a class="btn btn-default" href="<?= $this->url('users/user/read', ['id' => $entry['id']]) ?>" role="button">Edit</a>
+                    <a class="btn btn-default" href="<?= $this->url('users/user/delete', ['id' => $entry['id']]) ?>" role="button">Delete</a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
+<?= $this->render($paginator) ?>
+

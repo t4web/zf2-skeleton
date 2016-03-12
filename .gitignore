@@ -1,0 +1,4 @@
+.idea
+vendor
+public/theme/admin
+composer.lock
