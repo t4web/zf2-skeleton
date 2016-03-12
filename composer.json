@@ -40,7 +40,7 @@
         "t4web/domain-module": "~1.1.0",
         "t4web/paginator": "dev-master",
         "t4web/admin": "dev-master",
-        "t4web/migrations": "dev-master"
+        "t4web/migrations": "^2.0.2"
     },
     "require-dev": {
         "zendframework/zend-developer-tools": "dev-master",
