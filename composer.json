@@ -32,15 +32,18 @@
         "zendframework/zend-version": "~2.5.0",
         "zendframework/zend-session": "~2.5.0",
         "zendframework/zend-paginator": "~2.5.0",
+
         "sebaks/zend-mvc-controller": "dev-master",
         "sebaks/controller": "dev-master",
+        "sebaks/view": "dev-master",
+
         "t4web/domain-module": "~1.1.0",
         "t4web/paginator": "dev-master",
-        "sebaks/view": "dev-master",
-        "t4web/admin": "dev-master"
+        "t4web/admin": "dev-master",
+        "t4web/migrations": "dev-master"
     },
     "require-dev": {
         "zendframework/zend-developer-tools": "dev-master",
-        "codeception/codeception": "2.1.6"
+        "codeception/codeception": "~2.1.6"
     }
 }
