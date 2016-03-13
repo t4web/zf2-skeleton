@@ -16,5 +16,5 @@ $ ./vendor/bin/codecept run
 Result:
 ![Admin menu item](http://teamforweb.com/var/zf-skeleton-tests.jpg)
 
-Create acceptance test for each URI in your project!
+Create acceptance test for each URI in your project!  
 Create unit test for each Class in your project!
