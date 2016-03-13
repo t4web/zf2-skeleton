@@ -5,6 +5,8 @@ No application should not be developed without testing!
 Assumptions: You have already created database `skeleton_test` and user `skeleton` with password `111`
 and grant all privileges to database `skeleton_test`.
 
+You can change database config in `codeception.yml`
+
 In our work directory run
 
 ```shell

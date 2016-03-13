@@ -21,7 +21,7 @@ Just clone, install dependencies, remove module `Users` and work.
 4. Create database `skeleton` and database `skeleton_test`
 5. Create database user `skeleton` with password `111` and grant all privileges to database `sekeleton`
   and `skeleton_test`
-6. Restore database from dump in folder `tests/_data/skeleton_test.mysql.sql`\`tests/_data/skeleton_test.pgsql.sql`
+6. Restore database from dump in folder `tests/_data/skeleton_test.mysql.sql` \ `tests/_data/skeleton_test.pgsql.sql`
 7. Start internal PHP cli-server in root directory `php -S 0.0.0.0:8080 -t public/ public/index.php`
 
 Done, go to `http://localhost:8080`
