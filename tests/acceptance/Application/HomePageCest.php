@@ -1,11 +1,10 @@
 <?php
 
-namespace Challenges;
+namespace Test\Acceptance\Application;
 
-use Helper\Fixtures;
 use AcceptanceTester;
 
-class LogoCest
+class HomePageCest
 {
     public function checkMainPage(AcceptanceTester $I)
     {

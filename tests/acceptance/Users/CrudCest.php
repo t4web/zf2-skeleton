@@ -1,6 +1,6 @@
 <?php
 
-namespace Users;
+namespace Test\Acceptance\Users;
 
 use Helper\Fixtures;
 use AcceptanceTester;

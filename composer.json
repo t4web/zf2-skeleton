@@ -46,5 +46,10 @@
         "zendframework/zend-developer-tools": "dev-master",
         "codeception/codeception": "~2.1.6",
         "squizlabs/php_codesniffer": "^2.3"
-    }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\Acceptance\\": "tests/acceptance/"
+        }
+    },
 }
