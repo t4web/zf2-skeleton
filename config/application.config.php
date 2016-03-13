@@ -11,6 +11,7 @@ return [
         'Sebaks\View',
         'T4web\Paginator',
         'T4web\Admin',
+        'T4web\Migrations',
     ],
 
     // These are various options for the listeners attached to the ModuleManager
