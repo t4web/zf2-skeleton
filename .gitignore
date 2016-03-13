@@ -1,5 +1,6 @@
 .idea
 tests/_support/_generated
+tests/_output
 vendor
 public/theme/admin
 composer.lock
