@@ -20,6 +20,7 @@ class AcceptanceTester extends \Codeception\Actor
 {
     use _generated\AcceptanceTesterActions {
         amOnPage as traitAmOnPage;
+        sendRequest as traitSendRequest;
     }
 
     public function dontSeeErrors()
@@ -35,6 +36,14 @@ class AcceptanceTester extends \Codeception\Actor
         $this->setHeader('X_REQUESTED_WITH', 'Codeception');
         $result = $this->traitAmOnPage($url);
         $this->dontSeeErrors();
+
+        return $result;
+    }
+
+    public function sendRequest($method, $uri, $params = null)
+    {
+        $this->setHeader('X_REQUESTED_WITH', 'Codeception');
+        $result = $this->traitSendRequest($method, $uri, $params);
 
         return $result;
     }
