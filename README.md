@@ -30,7 +30,7 @@ Done, go to `http://localhost:8080`
 
 - [Tests](https://github.com/t4web/zf2-skeleton/blob/master/docs/tests.md) ([Codeception](https://github.com/Codeception/Codeception))
 - [Migrations](https://github.com/t4web/zf2-skeleton/blob/master/docs/migrations.md) (Module [T4web\Migrations](https://github.com/t4web/Migrations))
-- Domain (Module [T4web\DomainModule](https://github.com/t4web/DomainModule))
+- [Domain](https://github.com/t4web/zf2-skeleton/blob/master/docs/domain.md) (Module [T4web\DomainModule](https://github.com/t4web/DomainModule))
 - Zend-MVC-Controller (Module [Sebaks\ZendMvcController](https://github.com/sebaks/zend-mvc-controller))
 - Admin Backend (Module [T4web\Admin](https://github.com/t4web/Admin))
   - [Main menu](https://github.com/t4web/zf2-skeleton/blob/master/docs/main-menu.md)
