@@ -1,0 +1,6 @@
+<?php
+$viewModel = $this->viewModel()->getCurrent();
+/** @var \Users\User\User $user */
+$user = $viewModel->getVariable('value');
+?>
+<td><?= ($user) ? $user['name'] : 'Unknown' ?></td>

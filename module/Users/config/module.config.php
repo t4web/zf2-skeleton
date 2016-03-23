@@ -236,27 +236,6 @@ return [
                     'submitText' => 'Save',
                 ],
             ],
-            't4web-admin-sidebar-menu' => [
-                'children' => [
-                    [
-                        'extend' => 't4web-admin-sidebar-menu-item',
-                        'variables' => [
-                            'label' => 'Users',
-                            'route' => 'admin-users-user-list',
-                            'icon' => 'fa-th',
-                        ],
-                        'children' => [
-                            [
-                                'extend' => 't4web-admin-sidebar-treeview-menu-item',
-                                'variables' => [
-                                    'label' => 'List',
-                                    'route' => 'admin-users-user-list',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-            ],
         ],
     ],
 
@@ -289,6 +268,7 @@ return [
     'entity_map' => [
         'User' => [
             'table' => 'users',
+            'entityClass' => 'Users\User\User',
             'primaryKey' => 'id',
             'sequence' => 'users_id_seq',
             'columnsAsAttributesMap' => [

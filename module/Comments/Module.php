@@ -1,6 +1,6 @@
 <?php
 
-namespace Users;
+namespace Comments;
 
 class Module
 {

@@ -37,7 +37,7 @@
         "sebaks/controller": "dev-master",
         "sebaks/view": "dev-master",
 
-        "t4web/domain-module": "~1.1.0",
+        "t4web/domain-module": "~1.2.0",
         "t4web/paginator": "dev-master",
         "t4web/admin": "dev-master",
         "t4web/migrations": "^2.0.2"
@@ -51,5 +51,5 @@
         "psr-4": {
             "Test\\Acceptance\\": "tests/acceptance/"
         }
-    },
+    }
 }

@@ -7,6 +7,7 @@ return [
         'T4web\DomainModule',
         'Application',
         'Users',
+        'Comments',
         'Sebaks\ZendMvcController',
         'Sebaks\View',
         'T4web\Paginator',

@@ -10,6 +10,8 @@
 namespace Application;
 
 return [
+    'sebaks-view' => require_once 'sebaks-view.config.php',
+
     'router' => [
         'routes' => [
             'home' => [
