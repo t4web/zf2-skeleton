@@ -26,6 +26,12 @@ Just clone, install dependencies, remove module `Users` and work.
 
 Done, go to `http://localhost:8080`
 
+For see full AdminLTE theme
+
+1. download [AdminLTE v2.0.5](https://github.com/almasaeed2010/AdminLTE/archive/v2.0.5.zip)
+2. unzip to public/theme/
+3. You can see it in `http://localhost:8080/theme/AdminLTE-2.0.5/index.html`
+
 ## Contents
 
 - [Tests](https://github.com/t4web/zf2-skeleton/blob/master/docs/tests.md) ([Codeception](https://github.com/Codeception/Codeception))
