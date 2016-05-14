@@ -40,5 +40,8 @@ For see full AdminLTE theme
 - Zend-MVC-Controller (Module [Sebaks\ZendMvcController](https://github.com/sebaks/zend-mvc-controller))
 - Admin Backend (Module [T4web\Admin](https://github.com/t4web/Admin))
   - [Main menu](https://github.com/t4web/zf2-skeleton/blob/master/docs/main-menu.md)
-  - Build simply CRUD Entity
-
+  - Build simply CRUD Entity (For example we will create CRUD for entity `show` - simple catalog for TV Shows managing)
+    - [Create table](https://github.com/t4web/zf2-skeleton/blob/master/docs/migrations.md#example-create-table-shows-for-tv-show-catalog)
+    - [Describe entity](https://github.com/t4web/zf2-skeleton/blob/master/docs/domain.md#describe-entity)
+    - Define CRUD actions
+    - Describe view
