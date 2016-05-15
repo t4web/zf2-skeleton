@@ -1,6 +1,6 @@
 # ZF2 Skeleton. Domain
 
-In this tutorial we describe entity `Show` - for managing TV Shows catalog. `Show` caontain name, description and picture.
+In this tutorial we describe entity `Show` - for managing TV Shows catalog. `Show` contain name, description and picture.
 
 #### Describe entity
 
