@@ -43,5 +43,5 @@ For see full AdminLTE theme
   - Build simply CRUD Entity (For example we will create CRUD for entity `show` - simple catalog for TV Shows managing)
     - [Create table](https://github.com/t4web/zf2-skeleton/blob/master/docs/migrations.md#example-create-table-shows-for-tv-show-catalog)
     - [Describe entity](https://github.com/t4web/zf2-skeleton/blob/master/docs/domain.md#describe-entity)
-    - Define CRUD actions
-    - Describe view
+    - [Define CRUD actions](https://github.com/t4web/zf2-skeleton/blob/master/docs/crud.md)
+    - [Describe view](https://github.com/t4web/zf2-skeleton/blob/master/docs/view.md)
