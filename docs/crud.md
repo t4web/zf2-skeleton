@@ -5,24 +5,26 @@
 For CRUD action, we must describe actions config for `RouteGenerator`, somewhere in your `module.config.php`:
 
 ```php
-'route-generation' => [
-    [
-        'entity' => 'show',
-        'backend' => [
-            'actions' => [
-                'new',
-                'create',
-                'read',
-                'update',
-                'delete',
-                'list',
-            ],
-            'options' => [
-                'create' => [
-                    'changesValidator' => Action\Admin\Show\CreateAction\ChangesValidator::class,
+'t4web-crud' => [
+    'route-generation' => [
+        [
+            'entity' => 'show',
+            'backend' => [
+                'actions' => [
+                    'new',
+                    'create',
+                    'read',
+                    'update',
+                    'delete',
+                    'list',
                 ],
-                'update' => [
-                    'changesValidator' => Action\Admin\Show\CreateAction\ChangesValidator::class,
+                'options' => [
+                    'create' => [
+                        'changesValidator' => Action\Admin\Show\CreateAction\ChangesValidator::class,
+                    ],
+                    'update' => [
+                        'changesValidator' => Action\Admin\Show\CreateAction\ChangesValidator::class,
+                    ],
                 ],
             ],
         ],
