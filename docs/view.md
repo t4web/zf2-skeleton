@@ -1,6 +1,21 @@
 # ZF2 Skeleton. View
 
+## Contents
+
+- [Describe view config](#describe-view-config)
+- [List](#list)
+- [New](#new)
+- [Edit](#edit)
+
 See [sebaks\view](https://github.com/sebaks/view) for more information.
+For our view `sebaks\zend-vc-controller` will return that params:
+- 'result' => depends from action,
+- 'criteriaErrors' => error messages after criteria validation,
+- 'changesErrors' => error messages after changes validation,
+- 'criteria' => request criteria,
+- 'validCriteria' => only valid data from request criteria,
+- 'changes' => request data (for `create` and `update` actions),
+- 'validChanges' => only valid data from reqyest data (for `create` and `update` actions)
 
 #### Describe view config
 
