@@ -7,7 +7,7 @@
 - [New](#new)
 - [Edit](#edit)
 
-See [sebaks\view](https://github.com/sebaks/view) for more information.
+See [sebaks\view](https://github.com/sebaks/view) for more information.  
 For our view `sebaks\zend-vc-controller` will return that params:
 - `result` => depends from action,
 - `criteriaErrors` => error messages after criteria validation,
