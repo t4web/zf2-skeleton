@@ -3,14 +3,17 @@
 return [
     // This should be an array of module namespaces used in the application.
     'modules' => [
-        'ZendDeveloperTools',
+//        'ZendDeveloperTools',
+        'T4web\EventSubscriber',
+        'T4web\DefaultService',
         'T4web\DomainModule',
+        'T4web\Session',
+        'T4web\Authentication',
         'Application',
         'Users',
         'Comments',
         'Sebaks\ZendMvcController',
         'Sebaks\View',
-        'T4web\Paginator',
         'T4web\Admin',
         'T4web\Migrations',
     ],
